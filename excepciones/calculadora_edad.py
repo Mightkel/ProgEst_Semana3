@@ -4,8 +4,9 @@ while True:
     try:
         subprocess.run("cls", shell=True)
         edad = int(input("Edad: "))
-        print("Edad registrada: ", edad)
+        print(Fore.GREEN + "Edad registrada:",edad, Style.RESET_ALL)
         break
     except ValueError:
         print(Fore.RED + "Ingresa un valor numerico", Style.RESET_ALL)
-        subprocess("pause")
+        subprocess.run("pause", shell=True)
+
